@@ -6,11 +6,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
+import com.wellnwill.jm2009.learn.jdbc.util.DbUtil;
+
 public class InsertRecordsFromUserInput {
 
 	public static void main(String[] args) {
 		try {
-			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+			Connection con = DbUtil.getDatabaseConnection();
 			Statement stmt = con.createStatement();
 
 			Scanner scan = new Scanner(System.in);

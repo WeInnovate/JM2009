@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import com.wellnwill.jm2009.learn.jdbc.util.DbUtil;
+
 public class SelectRecord {
 
 	public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class SelectRecord {
 		 * 4. Process the result
 		 */
 		try {
-			Connection con = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
+			Connection con = DbUtil.getDatabaseConnection();
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM JM2009_USER WHERE ID = 101");
 			
