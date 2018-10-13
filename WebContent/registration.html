@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="resources/css/my-external-style.css" />
+<title>Registration Page!!!</title>
+</head>
+<body>
+<p>Please fill your details</p>
+	<!-- Form -->
+	<form action="">
+		Name: <input type="text" name="nm" /><br>
+		Email: <input type="email" name="email" required="required" /><br>
+		Password: <input type="password" name="pass" /><br>
+		Age: <input type="number" name="age" /><br>
+		
+		Gender: <input type="radio" name="gender" />Male &nbsp; 
+				<input type="radio" name="gender" />Female<br>
+		
+		Courses:	<input type="checkbox" name="courses" />Core Java &nbsp; 
+					<input type="checkbox" name="courses" />Advance Java &nbsp;
+					<input type="checkbox" name="courses" />Java Frameworks <br>
+		
+		Country: <select  name="country">
+					<option value="">--Select--</option>
+					<option value="India">India</option>
+					<option value="America">America</option>
+					<option value="Australia">Australia</option>
+				</select>
+		
+		<br>
+		Comment: <textarea rows="5" cols="20" name="comment"></textarea><br>
+		
+		<input type="reset" value="Reset" /> &nbsp; <input type="submit" value="Register Me" />
+		
+		<br><button>Don't use me</button>
+	</form>
+
+</body>
+</html>
