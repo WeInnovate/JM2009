@@ -17,11 +17,13 @@ public class RegistrationServlet extends HttpServlet {
 		super();
 	}
 
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println("doGet is ruuning....");
 	}
 
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println("doPost is ruuning....");
