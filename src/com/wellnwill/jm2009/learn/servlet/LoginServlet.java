@@ -30,6 +30,7 @@ public class LoginServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		if(userName.equalsIgnoreCase(password)) {
 			System.out.println("You are a valid user");
+			request.setAttribute("msg", "Login Successful!!!");
 			RequestDispatcher rd = request.getRequestDispatcher("profile");
 			rd.forward(request, response);
 		}
