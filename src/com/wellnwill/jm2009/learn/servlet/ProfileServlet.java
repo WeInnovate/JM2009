@@ -26,6 +26,9 @@ public class ProfileServlet extends HttpServlet {
 		String userName = request.getParameter("userName");
 
 		PrintWriter out = response.getWriter();
+		request.setAttribute("msg", "Login Successful!!!!");
+		request.setAttribute("temp", "Temp message");
+		request.removeAttribute("temp");
 		out.println(request.getAttribute("msg"));
 		out.println("Hello, " + userName);
 	}

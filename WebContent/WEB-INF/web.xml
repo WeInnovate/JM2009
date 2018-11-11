@@ -1,47 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-	id="WebApp_ID" version="4.0">
-	<display-name>JM2009</display-name>
-	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
-	<servlet>
-		<servlet-name>hello</servlet-name>
-		<servlet-class>com.wellnwill.jm2009.learn.servlet.HelloServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>hello</servlet-name>
-		<url-pattern>/greet</url-pattern>
-	</servlet-mapping>
-	<context-param>
-		<param-name>institute</param-name>
-		<param-value>IC</param-value>
-	</context-param>
-
-
-
-	<!-- Filters -->
-	<!-- 
-	<filter>
-		<filter-name>filter2</filter-name>
-		<filter-class>com.wellnwill.jm2009.learn.filter.Filter2</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>filter2</filter-name>
-		<url-pattern>/login</url-pattern>
-	</filter-mapping>
-	
-	<filter>
-		<filter-name>filter1</filter-name>
-		<filter-class>com.wellnwill.jm2009.learn.filter.Filter1</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>filter1</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-	 -->
-	
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>JM2009</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.wellnwill.jm2009.learn.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/greet</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>institute</param-name>
+    <param-value>IC</param-value>
+  </context-param>
+  <context-param>
+    <param-name>createTable</param-name>
+    <param-value>YeS</param-value>
+  </context-param>
 </web-app>
