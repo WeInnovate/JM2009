@@ -20,8 +20,14 @@ public class JavaServlet extends HttpServlet {
 	public JavaServlet() {
 	}
 
+	private void sum() {
+		System.out.println("This is sum method");
+	}
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		int i = 10 + 20;
+		sum();
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
