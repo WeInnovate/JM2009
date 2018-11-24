@@ -12,5 +12,6 @@
 	<p>
 		Please try again later. Go to <a href="index.html">Home</a>
 	</p>
+	<%= exception.getMessage() %>
 </body>
 </html>

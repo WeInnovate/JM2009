@@ -14,7 +14,7 @@
 		int i = 10 + 20 + sum(1, 2) + global;
 		displayMsg("Hello there!");
 		
-		int j = 10/0;
+		/* int j = 10/0; */
 	%>
 
 	<%
