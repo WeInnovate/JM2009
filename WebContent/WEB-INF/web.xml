@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
-  <display-name>JM2009</display-name>
-  <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.html</welcome-file>
-  </welcome-file-list>
-  <servlet>
-    <servlet-name>hello</servlet-name>
-    <servlet-class>com.wellnwill.jm2009.learn.servlet.HelloServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>hello</servlet-name>
-    <url-pattern>/greet</url-pattern>
-  </servlet-mapping>
-  <context-param>
-    <param-name>institute</param-name>
-    <param-value>IC</param-value>
-  </context-param>
-  <context-param>
-    <param-name>createTable</param-name>
-    <param-value>YeS</param-value>
-  </context-param>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>JM2009</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>com.wellnwill.jm2009.learn.servlet.HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/greet</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>institute</param-name>
+		<param-value>IC</param-value>
+	</context-param>
+	<context-param>
+		<param-name>createTable</param-name>
+		<param-value>YeS</param-value>
+	</context-param>
+
+
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<jsp-file>/login.jsp</jsp-file>
+
+		<init-param>
+			<param-name>any-data</param-name>
+			<param-value>Atul Dwivedi</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/jspLogin</url-pattern>
+	</servlet-mapping>
+
+
 </web-app>
