@@ -40,6 +40,7 @@ public class JavaServlet extends HttpServlet {
 		String trnMobile = cfg.getInitParameter("trainerMobile");
 
 		ServletContext ctx = cfg.getServletContext();
+		ctx.setAttribute("fullInstituteName", "InfoCampus Logics Pvt. Ltd.");
 		String instituteName = ctx.getInitParameter("institute");
 
 		response.setContentType("text/HTML");

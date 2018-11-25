@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 	<%@ page errorPage="my-common-error-page.jsp" %>
+	<%@ page session="true" %>
+	<%@ page isELIgnored="false" %>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +18,9 @@
 		displayMsg("Hello there!");
 		
 		/* int j = 10/0; */
+		
+		request.setAttribute("greetMe", "Good Morning");
+		session.setAttribute("userName", "AtulDwivedi");
 	%>
 
 	<%
@@ -43,3 +49,14 @@
 %>
 
 <%= fruits %>
+
+<br />
+${initParam.institute} &nbsp; <c:out value="${initParam.institute}" /><br /> 
+${requestScope.greetMe}<br />
+${sessionScope.userName}<br />
+${pageContext.session.id}<br />
+${applicationScope.fullInstituteName}<br />
+${header.host}
+${header.referer}
+${headrValues.accept-language[0]}
+${headrValues.accept-language[1]}

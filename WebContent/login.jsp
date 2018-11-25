@@ -16,8 +16,9 @@ color: red;
 </head>
 <body>
 <div class="container">
-<%@ include file="header.jsp" %>
-<form action="process-login.jsp" method="post">
+<%-- <%@ include file="header.jsp" %> --%>
+<jsp:include page="header.jsp" />
+<form action="process-login2.jsp" method="post">
   <div class="form-group">
   <span class="error"><%-- <%= request.getParameter("msg") == null ? "" : request.getParameter("msg")  %> --%>${param.msg}</span><br />
     <label for="exampleInputEmail1">Email address</label>
@@ -30,7 +31,8 @@ color: red;
   </div>
   <input type="submit" class="btn btn-primary" value="Login" />
 </form>
-<%@ include file="footer.jsp" %>
+<%-- <%@ include file="footer.jsp" %> --%>
+<jsp:include page="footer.jsp" />
 </div>
 </body>
 </html>
